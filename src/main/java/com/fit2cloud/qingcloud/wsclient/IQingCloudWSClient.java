@@ -92,11 +92,11 @@ public interface IQingCloudWSClient {
 
 	public GrantImageToUsersResponse grantImageToUsers(
 			GrantImageToUsersRequest grantImageToUsersRequest)
-					throws QingCloudClientException, QingCloudServiceException, IOException;
+			throws QingCloudClientException, QingCloudServiceException, IOException;
 
 	public RevokeImageFromUsersResponse revokeImageFromUsers(
 			RevokeImageFromUsersRequest revokeImageFromUsersRequest)
-					throws QingCloudClientException, QingCloudServiceException, IOException;
+			throws QingCloudClientException, QingCloudServiceException, IOException;
 
 
 	// -----------------------------------Volumes------------------------------------------------------
@@ -247,7 +247,7 @@ public interface IQingCloudWSClient {
 			ModifyRouterStaticAttributesRequest modifyRouterStaticAttributesRequest)
 			throws QingCloudClientException, QingCloudServiceException, IOException;
 
-    //-----------------------------------EIPs------------------------------------------------------
+	//-----------------------------------EIPs------------------------------------------------------
 	public AssociateEipResponse associateEip(
 			AssociateEipRequest associateEipRequest)
 			throws QingCloudClientException, QingCloudServiceException, IOException;
@@ -277,7 +277,7 @@ public interface IQingCloudWSClient {
 
 	public DescribeEipGroupsResponse describeEipGroups(
 			DescribeEipGroupsRequest describeEipGroupsRequest)
-					throws QingCloudClientException, QingCloudServiceException, IOException;
+			throws QingCloudClientException, QingCloudServiceException, IOException;
 
 	//-----------------------------------Load Balancers------------------------------------------------------
 	public DescribeLoadBalancersResponse describeLoadBalancers(
@@ -424,4 +424,13 @@ public interface IQingCloudWSClient {
 	public DescribeZonesResponse describeZones(
 			DescribeZonesRequest describeZonesRequest)
 			throws QingCloudClientException, QingCloudServiceException, IOException;
+
+	//-----------------------------------Resources------------------------------------------------------
+	public AddResourceGroupItemsResponse addResourceGroupItems(AddResourceGroupItemsRequest addResourceGroupItemsRequest) throws QingCloudClientException, QingCloudServiceException, IOException;
+
+	public DeleteResourceGroupItemsResponse deleteResourceGroupItems(DeleteResourceGroupItemsRequest deleteResourceGroupItemsRequest) throws QingCloudClientException, QingCloudServiceException, IOException;
+
+	public GrantResourceGroupsToUserGroupsResponse grantResourceGroupsToUserGroups(GrantResourceGroupsToUserGroupsRequest grantResourceGroupsToUserGroupsRequest) throws QingCloudClientException, QingCloudServiceException, IOException;
+	public AddProjectResourceItemsResponse addProjectResourceItems(
+			AddProjectResourceItemsRequest addProjectResourceItemsRequest) throws QingCloudClientException, QingCloudServiceException, IOException;
 }

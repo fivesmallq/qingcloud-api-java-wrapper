@@ -143,4 +143,10 @@ public class QingCloudAction {
     public static final String LEASE_APP = "LeaseApp";
     public static final String UNLEASE_APP = "UnLeaseApp";
 
+    //Collaboration
+    public static final String ADD_RESOURCE_GROUP_ITEMS = "AddResourceGroupItems";
+    public static final String ADD_PROJECT_RESOURCE_ITEMS = "AddProjectResourceItems";
+    public static final String DELETE_RESOURCE_GROUP_ITEMS = "DeleteResourceGroupItems";
+    public static final String GRANT_RESOURCE_GROUPS_TO_USER_GROUPS = "GrantResourceGroupsToUserGroups";
+
 }

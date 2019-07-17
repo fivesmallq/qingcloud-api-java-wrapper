@@ -2267,4 +2267,72 @@ public class QingCloudWSClient implements IQingCloudWSClient {
 		}
 		return revokeImageFromUsersResponse;
 	}
+
+	public AddResourceGroupItemsResponse addResourceGroupItems(
+			AddResourceGroupItemsRequest addResourceGroupItemsRequest) throws QingCloudClientException, QingCloudServiceException, IOException {
+		AddResourceGroupItemsResponse addResourceGroupItemsResponse = null;
+		String httpMethod = "GET";
+		String action = QingCloudAction.ADD_RESOURCE_GROUP_ITEMS;
+
+		try {
+			String jsonResponse = this.sendRequest(httpMethod, action,
+					addResourceGroupItemsRequest);
+			addResourceGroupItemsResponse = AddResourceGroupItemsResponse.fromJson(jsonResponse);
+		} catch (QingCloudClientException e) {
+			throw e;
+		} catch (QingCloudServiceException e) {
+			throw e;
+		}
+		return addResourceGroupItemsResponse;
+	}
+	public AddProjectResourceItemsResponse addProjectResourceItems(
+			AddProjectResourceItemsRequest addProjectResourceItemsRequest) throws QingCloudClientException, QingCloudServiceException, IOException {
+		AddProjectResourceItemsResponse addProjectResourceItemsResponse = null;
+		String httpMethod = "GET";
+		String action = QingCloudAction.ADD_PROJECT_RESOURCE_ITEMS;
+
+		try {
+			String jsonResponse = this.sendRequest(httpMethod, action,
+					addProjectResourceItemsRequest);
+			addProjectResourceItemsResponse = AddProjectResourceItemsResponse.fromJson(jsonResponse);
+		} catch (QingCloudClientException e) {
+			throw e;
+		} catch (QingCloudServiceException e) {
+			throw e;
+		}
+		return addProjectResourceItemsResponse;
+	}
+	public DeleteResourceGroupItemsResponse deleteResourceGroupItems(DeleteResourceGroupItemsRequest deleteResourceGroupItemsRequest) throws QingCloudClientException, QingCloudServiceException, IOException {
+		String httpMethod = "GET";
+		String action = QingCloudAction.DELETE_RESOURCE_GROUP_ITEMS;
+		DeleteResourceGroupItemsResponse deleteResourceGroupItemsResponse = null;
+
+		try {
+			String jsonResponse = this.sendRequest(httpMethod, action,
+					deleteResourceGroupItemsRequest);
+			deleteResourceGroupItemsResponse = DeleteResourceGroupItemsResponse.fromJson(jsonResponse);
+		} catch (QingCloudClientException e) {
+			throw e;
+		} catch (QingCloudServiceException e) {
+			throw e;
+		}
+		return deleteResourceGroupItemsResponse;
+	}
+
+	public GrantResourceGroupsToUserGroupsResponse grantResourceGroupsToUserGroups(GrantResourceGroupsToUserGroupsRequest grantResourceGroupsToUserGroupsRequest) throws QingCloudClientException, QingCloudServiceException, IOException {
+		String httpMethod = "GET";
+		String action = QingCloudAction.GRANT_RESOURCE_GROUPS_TO_USER_GROUPS;
+		GrantResourceGroupsToUserGroupsResponse deleteResourceGroupItemsResponse = null;
+
+		try {
+			String jsonResponse = this.sendRequest(httpMethod, action,
+					grantResourceGroupsToUserGroupsRequest);
+			deleteResourceGroupItemsResponse = GrantResourceGroupsToUserGroupsResponse.fromJson(jsonResponse);
+		} catch (QingCloudClientException e) {
+			throw e;
+		} catch (QingCloudServiceException e) {
+			throw e;
+		}
+		return deleteResourceGroupItemsResponse;
+	}
 }
