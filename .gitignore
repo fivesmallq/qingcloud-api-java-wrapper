@@ -2,4 +2,5 @@
 .project
 .settings/
 target/
-
+qingcloud-api-sdk.iml
+qingcloud-api-sdk.ipr
